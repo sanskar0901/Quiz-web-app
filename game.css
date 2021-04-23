@@ -29,7 +29,7 @@ body {
 
 .choice-prefix {
   padding: 1.5rem 2.5rem;
-  background-color: #56a5eb;
+  background-color: #2f93eb;
   color: white;
 }
 
@@ -65,13 +65,13 @@ body {
 #progressBar {
   width: 20rem;
   height: 4rem;
-  border: 0.3rem solid #56a5eb;
+  border: 0.3rem solid #2f93eb;
   margin-top: 1.5rem;
 }
 
 #progressBarFull {
   margin: 0px 0px 0px -0.05rem;
   height: 3.5rem;
-  background-color: #56a5eb;
+  background-color: #2f93eb;
   width: 0rem;
 }
