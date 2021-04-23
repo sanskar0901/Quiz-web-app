@@ -75,3 +75,10 @@ body {
   background-color: #2f93eb;
   width: 0rem;
 }
+.buttons {
+  display: flex;
+  margin: 20px auto;
+}
+.buttons .btn {
+  width: 200px;
+}
