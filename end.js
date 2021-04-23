@@ -28,30 +28,26 @@ var firebaseConfig = {
 
   
 
-// username.addEventListener('keyup', () => {
-//     saveScoreBtn.disabled = !username.value;
-//     console.log(username.value)
-// });
+
 
 function saveHighScore() {
     userId=Math.round(Math.random()*1000);
     firebase.database().ref('users/' + userId).set({
-      username1: username.value,
+      username: username.value,
       score: finalScore.innerHTML,
       
     });
-  }
-// saveHighScore = (e) => {
-//     e.preventDefault();
-
-//     const score = {
-//         score: mostRecentScore,
-//         name: username.value,
-//     };
-//     highScores.push(score);
-//     highScores.sort((a, b) => b.score - a.score);
-//     highScores.splice(5);
-
-//     localStorage.setItem('highScores', JSON.stringify(highScores));
-//     window.location.assign('/');
-// };
+  };
+  function goData(){
+    firebase.database().ref('users/').once("value",function(snapshot){
+      snapshot.forEach(
+        function(childsnapshot){
+          let name = childsnapshot.val().username;
+          let score = childsnapshot.val().score;
+          console.log(name , score)
+        }
+      );
+       
+    });
+    }
+    goData();
