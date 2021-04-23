@@ -9,6 +9,27 @@
   margin-bottom: 0.5rem;
 }
 
-.high-score:hover {
-  transform: scale(1.025);
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+h1 {
+  font-size: 80px;
+}
+
+td,
+th {
+  font-size: 30px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.btn {
+  width: 200px;
+  font-size: 30px;
 }

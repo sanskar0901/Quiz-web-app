@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>High Scores</title>
+    <title>Score Board</title>
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="highscores.css" />
   </head>
   <body>
     <div class="container">
       <div id="highScores" class="flex-center flex-column">
-        <h1 id="finalScore">High Scores</h1>
-        <ul id="highScoresList"></ul>
+        <h1 id="finalScore">Score Board</h1>
+       
+        <table border="2" id=table>
+          <tr>
+            <th>NAME</th>
+            <th>SCORE</th>
+          </tr>
+         
+          
+          
+        </table><br><br>
+
         <a class="btn" href="/">Go Home</a>
       </div>
     </div>
     <script src="highscores.js"></script>
+    
   </body>
 </html>
