@@ -94,7 +94,7 @@ let questions=[
         answer: 3
       },
       {
-        question: "12 - 8 = ?",
+        question: "12 * 8 = ?",
         choice1: "1",
         choice2: "2",
         choice3: "3",
