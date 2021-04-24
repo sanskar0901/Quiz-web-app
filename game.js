@@ -95,14 +95,14 @@ let questions=[
       },
       {
         question: "12 * 8 = ?",
-        choice1: "1",
-        choice2: "2",
-        choice3: "3",
-        choice4: "4",
-        answer: 4
+        choice1: "96",
+        choice2: "90",
+        choice3: "72",
+        choice4: "86",
+        answer: 1
       },
       {
-        question: "120 - 80 = ?",
+        question: "120 * 80 = ?",
         choice1: "9600",
         choice2: "2000",
         choice3: "1900",
@@ -152,7 +152,6 @@ choices.forEach((choice) => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-
         const classToApply =
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
@@ -165,9 +164,12 @@ choices.forEach((choice) => {
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
-
+        var choices = 'choice' 
+        document.getElementById(choices+currentQuestion.answer).parentElement.classList.add('correct');
+        
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            document.getElementById(choices+currentQuestion.answer).parentElement.classList.remove('correct');
             getNewQuestion();
         }, 1000);
     });
