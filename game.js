@@ -12,34 +12,107 @@ let score = 0;
 let questionCounter = 0;
 let avalableQuestions =[];
 let questions=[
+  {
+    question: "Inside which HTML element do we put the JavaScript??",
+    choice1: "script",
+    choice2: "javascript",
+    choice3: "js",
+    choice4: "scripting",
+    answer: 1
+  },
+  {
+    question:"What is the correct syntax for referring to an external script called 'xxx.js'?",
+    choice1: "script href='xxx.js",
+    choice2: "script name='xxx.js",
+    choice3: "script src='xxx.js",
+    choice4: "script file='xxx.js",
+    answer: 3
+  },
+  {
+    question: " How do you write 'Hello World' in an alert box?",
+    choice1: "msgBox('Hello World');",
+    choice2: "alertBox('Hello World');",
+    choice3: "msg('Hello World');",
+    choice4: "alert('Hello World');",
+    answer: 4
+  },
+  {
+    question: "Grand Central Terminal, Park Avenue, New York is the world's",
+    choice1: "largest railway station",
+    choice2: "highest railway station",
+    choice3: "longest railway station",
+    choice4: "None",
+    answer: 1
+  },
+  {
+    question: "Entomology is the science that studies",
+    choice1: "Behavior of human beings",
+    choice2: "Insects",
+    choice3: "The origin and history of technical and scientific terms",
+    choice4: "The formation of rocks",
+    answer: 2
+  },
+
+  {
+   question : "Which car manufacturer was the first to win 100 F1 races?",
+   choice1 : "Ferrari",
+   choice2 : "Nissan",
+   choice3 : "Ford",
+   choice4 : "None",
+   answer : 1
+  },
     {
-        question: "Inside which HTML element do we put the JavaScript??",
-        choice1: "script",
-        choice2: "javascript",
-        choice3: "js",
-        choice4: "scripting",
-        answer: 1
+      question : "In the professional era which woman has won the most titles at Wimbledon [singles, doubles and mixed] ?",
+      choice1 : "Venus",
+      choice2 : "Hingis",
+      choice3 : "Martina Navratilova",
+      choice4 : "Waynetta",
+      answer : 3
       },
       {
-        question:"What is the correct syntax for referring to an external script called 'xxx.js'?",
-        choice1: "script href='xxx.js",
-        choice2: "script name='xxx.js",
-        choice3: "script src='xxx.js",
-        choice4: "script file='xxx.js",
+        question : "How many times have Liverpool been relegated from the top flight of English football?",
+        choice1 : "Four",
+        choice2 : "Three",
+        choice3 : "Two",
+        choice4 : "Five",
+        answer : 2
+      },
+      {
+        question: " Which one is correct team name in NBA?",
+        choice1: "New York Bulls",
+        choice2: "Los Angeles Kings",
+        choice3: "Golden State Warriros",
+        choice4: "Huston Rocket",
+        answer: 4
+      },
+      {
+        question: "5 + 7 = ?",
+        choice1: "10",
+        choice2: "11",
+        choice3: "12",
+        choice4: "13",
         answer: 3
       },
       {
-        question: " How do you write 'Hello World' in an alert box?",
-        choice1: "msgBox('Hello World');",
-        choice2: "alertBox('Hello World');",
-        choice3: "msg('Hello World');",
-        choice4: "alert('Hello World');",
+        question: "12 - 8 = ?",
+        choice1: "1",
+        choice2: "2",
+        choice3: "3",
+        choice4: "4",
         answer: 4
+      },
+      {
+        question: "120 - 80 = ?",
+        choice1: "9600",
+        choice2: "2000",
+        choice3: "1900",
+        choice4: "4800",
+        answer: 1
       }
 ];
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 startGame = () =>{     
      questionCounter = 0;

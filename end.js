@@ -35,8 +35,10 @@ function saveHighScore() {
     firebase.database().ref('users/' + userId).set({
       username: username.value,
       score: finalScore.innerHTML,
+     
       
     });
+    window.alert('Saved Successfully')
   };
   function goData(){
     firebase.database().ref('users/').once("value",function(snapshot){
